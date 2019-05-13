@@ -1,0 +1,29 @@
+---
+title: "YorkRiverRaceResults"
+author: "Anne Racel"
+date: "May 13, 2019"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Race Results
+
+For York River Yacht Club's 2015 Season
+
+```{r message = FALSE}
+library(plotly)
+
+race <- read.csv('../RaceData.csv')
+
+pal <- c("red","blue", "blueviolet","brown4","burlywood4",
+         "chartreuse","chocolate4","cornflowerblue","cyan", "darkgoldenrod4")
+
+plot_ly(data = race, x = ~Rating, y = ~Points, 
+        color = ~Course, colors = pal, mode = 'markers')
+
+```
