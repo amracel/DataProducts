@@ -45,7 +45,7 @@ library. The dataset tracks the types of fatty acids in commercially available
 oils.
 
 For my interactive demo, I used plotly to allow the user to select different
-values for the fatty acids, then found the oil that most closely matched their 'mix'. But I cannot get plotly to work correctly here. Therefore, this demo will show a heatmap of the data that visualizes the fatty acids in each type of oil.
+values for the fatty acids, then found the oil that most closely matched their 'mix'. But I cannot get plotly to work correctly here. Therefore, this demo will show a pie chart that visualizes the types of fatty acids in one oil: pumpkin.
 
 
 --- .class #demo
